@@ -1,0 +1,137 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    width: 100vw;
+    background-color: #000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 100px;
+}
+
+header{
+    text-align: center;
+    color: #fff;
+    font-size: 50px;
+    font-weight: 800;
+    padding: 5px 30px;
+    border: 2px solid #fff;
+    border-radius: 10px;
+    width: fit-content;
+}
+
+main{
+    width: 50vw;
+    height: 70vh;
+    background-color: #1e194d;
+}
+
+.searchField{
+    width: 100%;
+    background-color: #fff;
+    padding: 15px 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+#userName{
+    padding: 10px 50px;
+    font-size: 19px;
+}
+
+::placeholder{
+    color: #000;
+    font-size: 19px;
+}
+
+#searchBtn{
+    padding: 10px 50px;
+    background-color: #1e194d;
+    color: #fff;
+    font-size: 17px;
+}
+.userData{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    opacity: 0;
+}
+
+
+#userAvatar{
+    height: 200px;
+    width: 200px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.avatarImg{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+.userInfo{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(3,1fr);
+    height: 30vh;
+    width: 70vh;
+    gap: 10px;
+}
+
+.userInfo div{
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-size: 25px;
+}
+
+
+#name{
+    grid-row: 1/2;
+    grid-column: 1/2;
+    background-color: #5d48e8;
+}
+
+#portfolio{
+    grid-row: 1/2;
+    grid-column: 2/3;
+    background-color: #5d48e8;
+}
+
+#location{
+    grid-row: 2/3;
+    grid-column: 1/2;
+    background-color: #5d48e8;
+}
+
+#publicRepo{
+    grid-row: 2/3;
+    grid-column: 2/3;
+    background-color: #5d48e8;
+}
+
+#follower{
+    grid-row: 3/4;
+    grid-column: 1/2;
+    background-color: #5d48e8;
+}
+
+#bio{
+    grid-row: 3/4;
+    grid-column: 2/3;
+    background-color: #5d48e8;
+}
